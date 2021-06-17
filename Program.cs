@@ -16,10 +16,8 @@ namespace ConsoleApp1
 
             int min = int.MaxValue;
             foreach(int d in adj[at])
-            {
                 if(NajkraciPut(d,end) != int.MaxValue)
                     min = Math.Min(min, NajkraciPut(d, end) + 1);
-            }
             
             return min;
         }
